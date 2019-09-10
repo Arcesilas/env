@@ -1,0 +1,27 @@
+{
+    "name": "arcesilas/env",
+    "description": "Read environment variables",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arcesilas",
+            "email": "arcesilas@neutre.email"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^8.3",
+        "php-mock/php-mock-phpunit": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arcesilas\\Env\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arcesilas\\Env\\Tests\\": "tests"
+        }
+    }
+}
