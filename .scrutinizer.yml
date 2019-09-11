@@ -8,10 +8,6 @@ build:
             environment:
                 php:
                     version: "7.2"
-        analysis:
-            dependencies:
-                after:
-                    - composer require squizlabs/php_codesniffer ^3.2
     tests:
         override:
             - command: php-scrutinizer-run
