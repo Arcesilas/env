@@ -38,7 +38,7 @@ class Env
         return static::convert($value);
     }
 
-    protected function convert($value)
+    protected static function convert($value)
     {
         if (ctype_digit($value)) {
             return (int) $value;
