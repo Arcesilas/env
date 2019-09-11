@@ -35,6 +35,11 @@ class Env
             return $default instanceof \Closure ? $default() : $default;
         }
 
+        return static::convert($value);
+    }
+
+    protected function convert($value)
+    {
         if (ctype_digit($value)) {
             return (int) $value;
         }
