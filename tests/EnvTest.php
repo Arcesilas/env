@@ -96,7 +96,8 @@ class EnvTest extends TestCase
         // Mock the getenv function with phpmock in Env class' namespace
         $getenv = $this->getFunctionMock('Arcesilas\\Env\\', 'getenv');
         $getenv->expects($this->once())
-            ->with($this->equalTo('foo'), $this->equalTo(true));
+            ->with($this->equalTo('foo'), $this->equalTo(true))
+            ->willReturn(false);
 
         Env::getLocal('foo');
     }
