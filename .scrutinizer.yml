@@ -16,3 +16,4 @@ build:
                 coverage:
                     file: 'coverage-clover'
                     format: 'clover'
+            - command: 'vendor/bin/phpcs'
