@@ -1,3 +1,10 @@
+![Scrutinizer build](https://img.shields.io/scrutinizer/build/g/Arcesilas/env?style=flat-square)
+![Scrutinizer coverage](https://img.shields.io/scrutinizer/coverage/g/Arcesilas/env?style=flat-square)
+![Scrutinizer code quality](https://img.shields.io/scrutinizer/quality/g/Arcesilas/env?style=flat-square)
+![PHP version](https://img.shields.io/packagist/php-v/Arcesilas/env?style=flat-square)
+![License](https://img.shields.io/github/license/Arcesilas/env?style=flat-square)
+![Maintenance](https://img.shields.io/maintenance/yes/2019?style=flat-square)
+
 # Env
 
 This simple package helps you get environment variables with getenv.
