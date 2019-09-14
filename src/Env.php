@@ -30,7 +30,7 @@ class Env
         return static::handleValue(getenv($name, true), $default);
     }
 
-    protected function handleValue($value, $default)
+    protected static function handleValue($value, $default)
     {
         if (false === $value) {
             return $default instanceof \Closure ? $default() : $default;
