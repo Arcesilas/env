@@ -4,22 +4,15 @@ namespace Arcesilas\Env;
 
 class Env
 {
-    /**
-     * Set to true to only return local environment variables (set by the operating system or putenv).
-     * @see https://www.php.net/manual/en/function.getenv.php#refsect1-function.getenv-parameters
-     * @var bool
-     */
-    protected static $localOnly = false;
-
-    /**
-     * Set the value of the second argument passed to getenv() function
-     * @param  bool   $localOnly
-     * @return void
-     */
-    public static function localOnly(bool $localOnly = false): void
-    {
-        static::$localOnly = $localOnly;
-    }
+    protected static $values = [
+        'true'  => true,
+        'on'    => true,
+        'yes'   => true,
+        'false' => false,
+        'off'   => false,
+        'no'    => false,
+        'null'  => null,
+    ];
 
     /**
      * Returns the environment variable or default value
@@ -29,8 +22,16 @@ class Env
      */
     public static function get(string $name, $default = null)
     {
-        $value = getenv($name, static::$localOnly);
+        return static::handleValue(getenv($name, false), $default);
+    }
 
+    public static function getLocal(string $name, $default = null)
+    {
+        return static::handleValue(getenv($name, true), $default);
+    }
+
+    protected function handleValue($value, $default)
+    {
         if (false === $value) {
             return $default instanceof \Closure ? $default() : $default;
         }
@@ -48,19 +49,10 @@ class Env
             return (float) $value;
         }
 
-        switch (strtolower($value)) {
-            case 'true':
-            case 'on':
-            case 'yes':
-                return true;
-            case 'false':
-            case 'off':
-            case 'no':
-                return false;
-            case 'null':
-                return null;
-        }
+        $lowerValue = strtolower($value);
 
-        return trim($value, '"\'');
+        return array_key_exists($lowerValue, static::$values)
+            ? static::$values[$lowerValue]
+            : trim($value, '"\'');
     }
 }
