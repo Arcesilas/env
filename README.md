@@ -1,8 +1,8 @@
-[![Scrutinizer build][ico-build]](link-scrutinizer)
-[![Scrutinizer coverage][ico-coverage]](link-scrutinizer)
-[![Scrutinizer code quality][ico-quality]](link-scrutinizer)
-[![PHP version][ico-php]](link-packagist)
-[![Packagist Version][ico-version]](link-packagist)
+[![Scrutinizer build][ico-build]][link-scrutinizer]
+[![Scrutinizer coverage][ico-coverage]][link-scrutinizer]
+[![Scrutinizer code quality][ico-quality]][link-scrutinizer]
+[![PHP version][ico-php]][link-packagist]
+[![Packagist Version][ico-version]][link-packagist]
 [![License][ico-license]](LICENSE.md)
 ![Maintenance][ico-maintenance]
 
