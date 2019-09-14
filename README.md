@@ -1,10 +1,10 @@
-![Scrutinizer build](https://img.shields.io/scrutinizer/build/g/Arcesilas/env?style=flat-square)
-![Scrutinizer coverage](https://img.shields.io/scrutinizer/coverage/g/Arcesilas/env?style=flat-square)
-![Scrutinizer code quality](https://img.shields.io/scrutinizer/quality/g/Arcesilas/env?style=flat-square)
-![PHP version](https://img.shields.io/packagist/php-v/Arcesilas/env?style=flat-square)
-![Packagist Version](https://img.shields.io/packagist/v/Arcesilas/env?style=flat-square)
-![License](https://img.shields.io/github/license/Arcesilas/env?style=flat-square)
-![Maintenance](https://img.shields.io/maintenance/yes/2019?style=flat-square)
+[![Scrutinizer build][ico-build]](link-scrutinizer)
+[![Scrutinizer coverage][ico-coverage]](link-scrutinizer)
+[![Scrutinizer code quality][ico-quality]](link-scrutinizer)
+[![PHP version][ico-php]](link-packagist)
+[![Packagist Version][ico-version]](link-packagist)
+[![License][ico-license]](LICENSE.md)
+![Maintenance][ico-maintenance]
 
 # Env
 
@@ -56,3 +56,14 @@ Some values are automatically converted to their native PHP equivalent type:
 Booleans can be converted from the following (case insensitive) strings:
 - `"true"`, `"on"`, `"yes"` => `true`
 - `"false"`, `"off"`, `"no"` => `false`
+
+[ico-build]: https://img.shields.io/scrutinizer/build/g/Arcesilas/env?style=flat-square
+[ico-coverage]: https://img.shields.io/scrutinizer/coverage/g/Arcesilas/env?style=flat-square
+[ico-quality]: https://img.shields.io/scrutinizer/quality/g/Arcesilas/env?style=flat-square
+[ico-php]: https://img.shields.io/packagist/php-v/Arcesilas/env?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/Arcesilas/env?style=flat-square
+[ico-license]: https://img.shields.io/github/license/Arcesilas/env?style=flat-square
+[ico-maintenance]: https://img.shields.io/maintenance/yes/2019?style=flat-square
+
+[link-scrutinizer]: https://scrutinizer-ci.com/g/Arcesilas/env/
+[link-packagist]: https://packagist.org/packages/arcesilas/env
