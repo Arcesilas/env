@@ -2,6 +2,7 @@
 ![Scrutinizer coverage](https://img.shields.io/scrutinizer/coverage/g/Arcesilas/env?style=flat-square)
 ![Scrutinizer code quality](https://img.shields.io/scrutinizer/quality/g/Arcesilas/env?style=flat-square)
 ![PHP version](https://img.shields.io/packagist/php-v/Arcesilas/env?style=flat-square)
+![Packagist Version](https://img.shields.io/packagist/v/Arcesilas/env?style=flat-square)
 ![License](https://img.shields.io/github/license/Arcesilas/env?style=flat-square)
 ![Maintenance](https://img.shields.io/maintenance/yes/2019?style=flat-square)
 
@@ -11,7 +12,7 @@ This simple package helps you get environment variables with getenv.
 
 ## Installation
 
-`composer require arcesilas\env`
+`composer require arcesilas/env`
 
 ## Usage
 
